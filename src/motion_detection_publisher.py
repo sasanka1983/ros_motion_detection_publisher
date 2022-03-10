@@ -22,7 +22,7 @@ class motion_detection_publish:
         ret1,frame1= cap.read()
         gray1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
         gray1 = cv2.GaussianBlur(gray1, (21, 21), 0)
-        cv2.imshow('window',frame1)
+        #cv2.imshow('window',frame1)
         image_count=1
         while(not rospy.is_shutdown()):
             try:
